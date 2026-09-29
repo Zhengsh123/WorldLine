@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="WorldLine: action-driven visual simulation for robotic manipulation.">
+  <meta name="theme-color" content="#f4f7fc">
+  <title>WorldLine — Action-Driven Visual Simulation</title>
+  <link rel="stylesheet" href="styles.css?v=19">
+</head>
+<body id="top">
+  <a class="skip-link" href="#content">Skip to results</a>
+  <header class="hero">
+    <div class="hero-shell">
+      <div class="brand-row">
+        <a class="wordmark" href="#top" aria-label="Back to top">
+          <svg class="globe-logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="globe-ocean" cx="31%" cy="25%" r="78%">
+                <stop offset="0" stop-color="#8ce3f0"/>
+                <stop offset=".55" stop-color="#318bd5"/>
+                <stop offset="1" stop-color="#174b9e"/>
+              </radialGradient>
+              <linearGradient id="globe-shine" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#fff" stop-opacity=".7"/>
+                <stop offset=".6" stop-color="#fff" stop-opacity=".08"/>
+                <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+              </linearGradient>
+              <clipPath id="globe-clip"><circle cx="32" cy="32" r="28"/></clipPath>
+            </defs>
+            <g class="globe-rotation">
+              <circle cx="32" cy="32" r="28" fill="url(#globe-ocean)"/>
+              <g clip-path="url(#globe-clip)">
+                <path class="globe-land" d="M8 17 12 13 18 11 22 13 25 12 28 16 25 18 26 21 22 22 21 26 17 27 15 24 11 23 9 20Z M18 29 22 30 24 34 23 38 25 42 23 47 21 53 18 49 17 44 15 40 16 35Z M31 15 35 12 39 13 42 11 48 13 52 16 57 17 55 20 50 20 47 23 43 22 41 25 37 23 35 25 32 22 29 21 28 18Z M35 25 40 24 44 27 44 31 41 34 40 39 37 44 34 41 33 37 31 34 32 30 29 28 31 25Z M48 39 52 38 55 41 54 44 50 44 48 42Z"/>
+                <path class="globe-latitude" d="M5 23C20 30 44 30 59 23M4 41C20 34 44 34 60 41"/>
+                <ellipse class="globe-longitude" cx="32" cy="32" rx="12" ry="28"/>
+                <ellipse class="globe-longitude" cx="32" cy="32" rx="22" ry="28"/>
+                <path d="M5 13C12 5 23 2 34 4c-8 2-13 6-17 12-3 5-4 12-3 18 1 10 5 18 12 25C10 56 4 46 4 33c0-8 0-14 1-20Z" fill="url(#globe-shine)"/>
+              </g>
+              <circle class="globe-outline" cx="32" cy="32" r="28"/>
+            </g>
+          </svg>
+        </a>
+        <span class="project-badge">ROBOT LEARNING</span>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">ACTION-DRIVEN VISUAL SIMULATION</p>
+        <h1 id="page-title">WorldLine</h1>
+        <p id="page-subtitle" class="subtitle">Action-Driven Visual Simulation for Robotic Manipulation</p>
+        <p class="hero-description">A visual simulator that predicts how robot actions change the scene. WorldLine separates learning robot–object dynamics from learning how each robot’s controls should steer them.</p>
+        <div class="author-affiliation-glass">
+          <p class="authors"><span class="author-name">Shenghe Zheng<sup>1</sup></span><span class="author-name">Wenbo Li<sup>2,&dagger;</sup></span><span class="author-name">Jiyao Zhang<sup>3</sup></span><span class="author-name">Bin Xia<sup>4</sup></span><span class="author-name">Haoyang Huang<sup>2</sup></span><span class="author-name">Nan Duan<sup>2</sup></span><span class="author-name">Jiaya Jia<sup>1,&Dagger;</sup></span></p>
+          <div class="affiliation-logos" aria-label="Author affiliations">
+            <div class="affiliation-logo"><img src="media/logos/hkust.svg" alt=""><span><sup>1</sup> HKUST</span></div>
+            <div class="affiliation-logo"><img src="media/logos/joy-future-academy.png" alt="JoyAI"><span><sup>2</sup> Joy Future Academy</span></div>
+            <div class="affiliation-logo"><img src="media/logos/peking-university.png" alt=""><span><sup>3</sup> Peking University</span></div>
+            <div class="affiliation-logo"><img src="media/logos/cuhk.svg" alt=""><span><sup>4</sup> CUHK</span></div>
+          </div>
+          <p class="author-notes"><sup>&dagger;</sup> Project Lead <span>·</span> <sup>&Dagger;</sup> Corresponding Author</p>
+        </div>
+      </div>
+      <p class="inference-note"><span>INFERENCE</span> Action-grounded predictions are conditioned on visual observations and image-space actions—not task text.</p>
+    </div>
+  </header>
+  <div class="nav-shell">
+    <div class="nav-inner"><nav id="section-nav" aria-label="Showcase sections">
+      <a href="#overview">Overview</a>
+      <a href="#performance">Performance</a>
+      <a href="#method-overview">Method</a>
+    </nav></div>
+  </div>
+  <main id="content" class="page-content">
+    <section id="overview" class="paper-block overview-block">
+      <div class="block-heading">
+        <p class="section-kicker">WORLDLINE AT A GLANCE</p>
+        <h2>Overview</h2>
+      </div>
+      <figure class="teaser-figure">
+        <img src="media/figures/worldline-teaser.png" alt="WorldLine teaser: action-conditioned robot manipulation predictions across camera views and embodiments" width="1896" height="853">
+        <figcaption>WorldLine predicts action-conditioned visual futures across robot embodiments and camera views.</figcaption>
+      </figure>
+      <p class="overview-copy">WorldLine is an action-driven visual simulator for predicting robot manipulation before physical execution. It separates <strong>transferable dynamics learning</strong> from <strong>action grounding</strong>: broad action-free robot video teaches how robots and objects interact, while calibrated action trajectories connect those dynamics to each robot’s controls.</p>
+      <p class="overview-copy">An image-space action representation provides a shared interface across embodiments. Multi-view and failure-enriched training, relational regularization, and robot-focused few-step distillation improve interaction-sensitive prediction and efficient causal rollout—supporting policy evaluation and embodied planning.</p>
+    </section>
+
+    <section id="performance" class="paper-block performance-block">
+      <div class="block-heading">
+        <p class="section-kicker">PERFORMANCE AT A GLANCE</p>
+        <h2>Scale, fidelity, and downstream utility</h2>
+        <p>Key figures reported in the paper across training data, held-out evaluation, and out-of-domain planning.</p>
+      </div>
+      <div id="performance-metrics" class="performance-grid" aria-label="WorldLine scale and results"></div>
+    </section>
+
+    <section id="method-overview" class="method-overview">
+      <div class="method-intro">
+        <p class="section-kicker">THE WORLDLINE APPROACH</p>
+        <h2>How WorldLine works</h2>
+        <p>WorldLine combines transferable manipulation dynamics learned from large-scale robot video with an image-space action interface that grounds controls across embodiments.</p>
+      </div>
+      <div class="method-grid">
+        <article class="method-card">
+          <div class="method-card-top"><span class="method-number">01</span><span class="method-label">STAGE I</span></div>
+          <h3>Pretrain on robot dynamics</h3>
+          <p>Adapt a video model on more than 10,000 hours of action-free robot video. It learns how robots and objects move and interact before receiving control supervision.</p>
+          <span class="method-footnote">TRANSFERABLE DYNAMICS PRIOR</span>
+        </article>
+        <article class="method-card">
+          <div class="method-card-top"><span class="method-number">02</span><span class="method-label">STAGE II</span></div>
+          <h3>Ground actions in image space</h3>
+          <p>Project each robot’s end-effector position, depth, orientation, and gripper state into calibrated camera views. These spatial action maps give different embodiments a shared visual control interface.</p>
+          <span class="method-footnote">2,000+ HOURS · 10+ EMBODIMENTS</span>
+        </article>
+        <article class="method-card">
+          <div class="method-card-top"><span class="method-number">03</span><span class="method-label">STAGE III</span></div>
+          <h3>Roll out futures causally</h3>
+          <p>Distill the simulator into a block-autoregressive model that accepts updated actions as it predicts. Four denoising steps generate each block, keeping rollouts practical for interactive use.</p>
+          <span class="method-footnote">4-STEP · ONLINE-ACTION ROLLOUT</span>
+        </article>
+      </div>
+      <div class="method-details">
+        <article class="method-detail">
+          <span class="detail-index">A</span>
+          <div><h3>One action language across robots</h3><p>Native controls differ in dimensions and coordinate systems. WorldLine uses robot kinematics and camera calibration to express them as aligned spatial maps, preserving where and how the robot is expected to move.</p></div>
+        </article>
+        <article class="method-detail">
+          <span class="detail-index">B</span>
+          <div><h3>Train for interaction, not appearance alone</h3><p>Synchronized head and wrist views, failure trajectories, and relational regularization teach the model to preserve robot–object interactions across time and viewpoints—not just plausible backgrounds.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <div id="video-results"><div id="results"></div></div>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-mark" href="#top">WORLDLINE<span> ↗</span></a>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="data.js?v=7"></script>
+  <script src="app.js?v=13"></script>
+</body>
+</html>
