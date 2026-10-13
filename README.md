@@ -14,6 +14,10 @@ Shenghe Zheng<sup>1</sup>, Wenbo Li<sup>2,†</sup>, Jiyao Zhang<sup>3</sup>, Bi
 
 </div>
 
+## News
+
+- **September 2026:** The [WorldLine paper](https://arxiv.org/abs/2609.38059) and [project website](https://zhengsh123.github.io/WorldLine/) were made public.
+
 ## Overview
 
 WorldLine is an action-driven visual simulator that predicts how robot actions change a scene before physical execution. It learns transferable robot–object dynamics from action-free video, then grounds different robots' controls in a shared image-space action representation.
